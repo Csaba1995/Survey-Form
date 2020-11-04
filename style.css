@@ -1,0 +1,89 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:root {
+  --color-white: #ffffff;
+  --color-darkblue: #171731;
+  --color-darkblue-alpha: rgba(32, 32, 53, 0.8);
+  --color-green: #1cb857;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--color-white);
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(80, 80, 165, 0.75),
+      rgba(138, 138, 226, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1055&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#name,
+#email,
+#number,
+#dropdown,
+#features,
+#submit,
+#textarea {
+  width: 100%;
+  max-width: 650px;
+  height: 38px;
+  text-align: center;
+  border-radius: 6px;
+}
+#description {
+  text-align: center;
+  line-height: 4rem;
+}
+#title {
+  text-align: center;
+  color: var(--color-white);
+}
+.head {
+  display: block;
+}
+#survey-form {
+  color: var(--color-white);
+}
+#submit {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+
+.form-box {
+  margin: 0 auto;
+  text-align: left;
+  max-width: 700px;
+  max-height: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.check {
+  display: block;
+}
+#textarea {
+  text-align: left;
+  height: 100px;
+}
